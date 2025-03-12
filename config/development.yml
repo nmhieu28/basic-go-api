@@ -1,0 +1,58 @@
+server:
+  appVersion: 1.0.0
+  serviceName: "Backend-api"
+  port: :8888
+  mode: Development
+  readTimeout: 15
+  writeTimeout: 15
+  ssl: false
+  ctxDefaultTimeout: 12
+  csrf: true
+  debug: true
+logger:
+  development: true
+  disableCaller: false
+  disableStacktrace: false
+  encoding: json
+  level: Info
+  fileName: ../logs/%s-%s.log
+  maxSize: 50
+  maxAge: 28
+  maxBackups: 1
+  compress: true
+postgresql:
+  host: ""
+  port: 5432
+  userName: ""
+  password: ""
+  dbName: ""
+  maxIdleConns: 10
+  maxOpenConns: 100
+  connMaxLifeTime: 3600
+  driver: "postgresql"
+jwt:
+  secretKey: ""
+  refreshSecretKey: ""
+  verifyEmailSecretKey: ""
+  verifyEmailTokenExpire: 1
+  tokenExpire: 60
+  refreshTokenExpire: 7
+  audience: "http://localhost:3000"
+  issuer: "http://localhost:8888"
+smtp:
+  userName: ""
+  password: ""
+  service: "gmail"
+  port: "465"
+  host: "smtp.gmail.com"
+  from: ""
+cors:
+  enable: true
+  allows: ["http://localhost:3000"]
+redis:
+  host: ""
+  port: 6379
+  userName: ""
+  password: ""
+serviceUrl:
+  frontend: ""

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verify Your Identity</title>
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    "
+  >
+    <header style="text-align: center; margin-bottom: 20px">
+      <h1 style="color: #4a4a4a; text-align: center">AppName</h1>
+    </header>
+
+    <main>
+      <p>Hello,</p>
+      <p>
+        Thank you for signing up! To complete your registration and verify your
+        identity, please enter the code provided below:
+      </p>
+
+      <div style="text-align: center; margin: 30px 0">
+        <a href="{{.ConfirmationURL}}">
+          <button
+            style="
+              background-color: #4caf50;
+              color: white;
+              padding: 14px 20px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+              border: none;
+            "
+          >
+            Verify My Identity
+          </button></a
+        >
+      </div>
+
+      <p>
+        If the button above doesn't work, you can also copy and paste the
+        following link into your browser:
+      </p>
+      <a style="word-break: break-all; color: rgb(0, 140, 255)">
+        {{.ConfirmationURL}}
+      </a>
+
+      <p>
+        This link will expire in 1 hours. If you didn't request this
+        verification, please ignore this email.
+      </p>
+    </main>
+
+    <footer
+      style="margin-top: 40px; text-align: center; font-size: 12px; color: #888"
+    >
+      <h2 style="color: #4a4a4a; text-align: center">OmiBoard</h2>
+      <p>This is an automated message, please do not reply to this email.</p>
+      <p>
+        If you need assistance, please contact our support team at
+        contact@gmail.com
+      </p>
+      <p>&copy; 2025 appname.com. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
